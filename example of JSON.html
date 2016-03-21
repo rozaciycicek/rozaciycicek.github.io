@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>example of JSON</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script  src="https://code.jquery.com/jquery-2.2.2.js"></script>
+    </head>
+    <body>
+        <div>
+            <p id="text"></p>
+            <script>
+                var obj1 = {"name": "John Johnson", "street": "Oslo West 16", "phone": "555 444 22", "age": 20, "height":185 , "weight": 85 };
+                var obj2 = {"name": "Micheal Down", "street": "Wall Street 37", "phone": "534 567 11", "age":25, "height":170 , "weight":55 };
+
+
+                $('#text')[0].innerHTML =
+                        obj1.name + "<br>" +
+                        obj1.street + "<br>" +
+                        obj1.phone + "<br>" +
+                        obj1.age + "<br>" +
+                        obj1.height + "<br>" +
+                        obj1.weight + "<br>" + "<br>" +
+                        
+                        obj2.name + "<br>" +
+                        obj2.street + "<br>" +
+                        obj2.phone + "<br>" +
+                        obj2.age + "<br>" +
+                        obj2.height + "<br>" +
+                        obj2.weight;
+
+            </script>
+        </div>
+    </body>
+</html>
